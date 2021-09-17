@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+
+/* HEAD */
+.head{
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+}
+.logo, .menu{
+    margin: .6rem 5rem;
+    cursor:pointer;
+}
+
+
+/* ***The HERO part*** */
+.hero_section{
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    background-position: center;
+    /* overflow: hidden; */
+    height: 130vh;
+    max-width: 100%;
+    background-position-x:center;
+}
+.hero_section img{
+    width: 100%;
+}
+.hero_section_content{
+    position: absolute;
+    bottom: 20px;
+    margin: 25px;   
+}
+.hero_text{
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 8px solid #fff;
+    max-width: 300px;
+}
+.hero_text h1{
+    font-size: 70px;
+    font-weight: 10rem;
+}
+.hero_service_icons{
+    display: flex;    
+}
+.hero_service_icons .service_icons{
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.hero_service_icons img{
+    height: 80px;
+    padding: 10px;
+
+}
+
+
+/* ***The Services section*** */
+.services{
+    padding: 20px;
+    min-height: 450px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.services_contents{
+    max-width: 550px;
+    min-height:400px ;
+    margin: auto;
+}
+
+.services h5, h1, p, button{
+    margin-top: 30px;
+}
+
+.services h5{
+    font-size: 15px;
+    color: #9b9b9b;
+}
+.services p{
+    font-size: 18px;
+    color: #4a4a4a;
+}
+.services h1{
+    font-size: 35px;
+    color: #000;
+}
+.services button, 
+.advert_texts button,
+.info_section .btn1 button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #e71a23;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.services button:hover, 
+.advert_texts button:hover, 
+.info_section .btn1 button:hover{
+    background-color: #c71821;
+    transition: 0.2s ease-in;
+}
+
+
+/* ***The help section*** */
+.help{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.help img{
+    max-height: 550px;
+    max-width: 400px;
+}
+.help .help1 p{
+    line-height: 28px;
+    margin: 60px 0px 0px 10px;
+    max-width: 400px;
+    font-size: 17px;
+}
+.help .help2{
+    margin-top: 50px;
+}
+.help .help2 h3{
+    margin-bottom: 80px;
+}
+.help .help2 h2, h3{
+    line-height: 5px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.help .help1, .help2{
+    max-width: 450px;
+}
+
+
+/* ***The advert section..*** */
+.advert{
+    background-color: #d9d7dc;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+   justify-content: space-evenly;
+}
+.advert_photo{
+    background-image: url(../images/engineer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 34rem;
+    width: 25rem;
+    background-size: contain;
+}
+.advert_texts{
+    line-height: 28px;
+    align-items: center;
+    margin: auto;
+    width: 450px;
+    padding: 20px;
+}
+.advert_texts h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #104e92;
+    border-bottom: 8px solid #ff0000;
+    padding: 20px;
+    max-width: 370px;
+    line-height: 40px;
+}
+
+
+/* ***The Our Service section*** */
+.our_services{
+    background-color: #fff;
+}
+.our_services h1{
+    font-size: 40px;
+    margin: 30px 90px;
+}
+.all_services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.our_services .all_services .service{
+    margin: 20px 0px;
+    padding: 20px;
+    align-items: center;
+    max-width: 280px;
+    line-height: 28px;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+}
+.our_services .all_services .service h3{
+    font-size: 20px;
+}
+.our_services .all_services .service img{
+    background-color: rgb(202, 9, 9);
+    padding: 15px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+/* ***Here's the about service section*** */
+
+.about_services{
+    background-color: #104e92;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.content1{
+    max-width: 400px;
+    padding: 10px 0px 20px 0px;
+    line-height: 50px;
+    margin: auto;
+    font-size: 65px;
+    color: #fff;
+}
+.content2{
+    width: 500px;
+}
+
+.content2 .content_img{
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+    margin: 10px;
+    height: 200px;
+    width: 210px;
+    transition: all 1s
+
+}
+.content2 .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content2 .image1{
+    background-image: url(../images/plumberMan1.png);
+}
+.content2 .image2{
+    background-image: url(../images/plumbingDoc.png);
+}
+.content2 .image3{
+    background-image: url(../images/plumberMan2.jpg);
+}
+.content2 .image4{
+    background-image: url(../images/plumbingHands.jpg);
+}
+
+
+/* NEW */
+.info_section{
+    text-align: center;
+    padding: 80px 10px;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+}
+
+
+.info_section .btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.info_section .btn2 button{
+    font-size: 15px;
+    color: #000;
+    background-color: rgb(237, 235, 240);
+    padding: 18px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 30px;;
+    cursor: pointer;
+}
+
+
+.info_section .btn2 button:hover{
+    transition: all 0.2s ease-out;
+    background-color: #fff;
+}
+
+
+.foot{
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+    line-height: 50px;
+    margin-bottom: 0%;
+}
+.foot a{
+    color: rgb(187, 182, 255);
+}
