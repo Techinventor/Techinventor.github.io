@@ -6,6 +6,9 @@
 
 body{
     font-family:sans-serif;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0;
 }
 
 
@@ -16,10 +19,9 @@ body{
     justify-content: space-between;
 }
 .logo, .menu{
-    margin: .6rem 5rem;
+    margin: .6rem 1rem;
     cursor:pointer;
 }
-
 
 /* ***The HERO part*** */
 .hero_section{
@@ -27,11 +29,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
-    background-position: center;
-    /* overflow: hidden; */
-    height: 130vh;
-    max-width: 100%;
-    background-position-x:center;
+    background-position: 70% 0%;
+    overflow: hidden;
+    height: 120vh;
+    width: 100%;
+    /* background-position-x:center; */
+    overflow-x: hidden;
 }
 .hero_section img{
     width: 100%;
@@ -42,14 +45,14 @@ body{
     margin: 25px;   
 }
 .hero_text{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     border-bottom: 8px solid #fff;
     max-width: 300px;
 }
 .hero_text h1{
     font-size: 70px;
-    font-weight: 10rem;
+    font-weight: 1rem;
 }
 .hero_service_icons{
     display: flex;    
@@ -62,7 +65,7 @@ body{
 .hero_service_icons img{
     height: 80px;
     padding: 10px;
-
+    
 }
 
 
@@ -94,7 +97,7 @@ body{
     color: #4a4a4a;
 }
 .services h1{
-    font-size: 35px;
+    font-size: 25px;
     color: #000;
 }
 .services button, 
@@ -126,14 +129,14 @@ body{
 }
 
 .help img{
-    max-height: 550px;
-    max-width: 400px;
+    max-height: 350px;
+    max-width: 300px;
 }
 .help .help1 p{
     line-height: 28px;
     margin: 60px 0px 0px 10px;
-    max-width: 400px;
-    font-size: 17px;
+    max-width: 300px;
+    font-size: 18px;
 }
 .help .help2{
     margin-top: 50px;
@@ -143,7 +146,7 @@ body{
 }
 .help .help2 h2, h3{
     line-height: 5px;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 50px;
 }
 .help .help1, .help2{
@@ -154,7 +157,7 @@ body{
 /* ***The advert section..*** */
 .advert{
     background-color: #d9d7dc;
-   display: flex;
+    display: flex;
    flex-wrap: wrap;
    align-items: baseline;
    justify-content: space-evenly;
@@ -191,7 +194,7 @@ body{
 }
 .our_services h1{
     font-size: 40px;
-    margin: 30px 90px;
+    margin: 30px 80px;
 }
 .all_services{
     display: flex;
@@ -220,7 +223,6 @@ body{
 
 
 /* ***Here's the about service section*** */
-
 .about_services{
     background-color: #104e92;
     display: flex;
@@ -229,11 +231,11 @@ body{
     padding: 20px;
 }
 .content1{
-    max-width: 400px;
+    max-width: 300px;
     padding: 10px 0px 20px 0px;
-    line-height: 50px;
+    line-height: 40px;
     margin: auto;
-    font-size: 65px;
+    font-size: 40px;
     color: #fff;
 }
 .content2{
@@ -251,7 +253,7 @@ body{
     height: 200px;
     width: 210px;
     transition: all 1s
-
+    
 }
 .content2 .row{
     display: flex;
@@ -282,7 +284,6 @@ body{
     margin: auto;
 }
 
-
 .info_section .btns{
     display: flex;
     flex-wrap: wrap;
@@ -302,12 +303,10 @@ body{
     cursor: pointer;
 }
 
-
 .info_section .btn2 button:hover{
     transition: all 0.2s ease-out;
     background-color: #fff;
 }
-
 
 .foot{
     background-color: #333333;
@@ -319,4 +318,78 @@ body{
 }
 .foot a{
     color: rgb(187, 182, 255);
+}
+
+
+/* ***Responsive design media querries*** */
+@media only screen and (max-width: 768px) {
+    .hero_section{
+        background-position: 80% 50%;
+        height: 80vh;
+        
+    }
+    .hero_service_icons .service_icons{
+        display: none;
+    }
+
+    .hero_text{
+        font-size: 20px;
+        color: #fff;
+        border-bottom: 8px solid #fff;
+        max-width: 200px;
+    }
+
+    .hero_text h1{
+        /* font-size: 10px; */
+        font-weight: 3px;
+    }
+}
+
+
+@media only screen and (max-width: 568px) {
+    .hero_section{
+        background-position: 80% 50%;
+        height: 60vh;
+        
+    }
+    .hero_service_icons .service_icons{
+        display: none;
+    }
+
+    .hero_text{
+        font-size: 20px;
+        color: #fff;
+        border-bottom: 8px solid #fff;
+        max-width: 300px;
+    }
+
+    .hero_text h1{
+        font-size: 50px !important;
+        font-weight: 3px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .hero_section{
+        background-position: 80% 50%;
+        height: 50vh;
+        
+    }
+    .hero_service_icons .service_icons{
+        display: none;
+    }
+
+    .hero_text{
+        font-size:xx-small !important;
+        color: #fff;
+        border-bottom: 8px solid #fff;
+        min-width: 10px;
+        
+    }
+
+    .hero_text h1{
+        font-size: 35px !important;
+        font-weight: 3px;
+    }
 }
